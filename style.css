@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-sans: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project Card Hover */
+.project-card img {
+    filter: grayscale(100%);
+    transition: all 0.7s ease;
+}
+
+.project-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Mobile Menu Transition */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Lucide Icons Visibility Fix */
+.lucide {
+    display: inline-block;
+    vertical-align: middle;
+    stroke-width: 2px;
+    stroke: currentColor;
+    fill: none;
+}
+
+/* Skill Card Hover */
+.skill-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Selection Color */
+::selection {
+    background: #000000;
+    color: #ffffff;
+}

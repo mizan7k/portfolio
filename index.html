@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mizanur Rahman | Vibe Coder</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black font-sans antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter">
+                PORTFOLIO<span class="text-gray-400">.</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-black transition-colors">About</a>
+                <a href="#experience" class="text-sm font-medium text-gray-600 hover:text-black transition-colors">Experience</a>
+                <a href="#skills" class="text-sm font-medium text-gray-600 hover:text-black transition-colors">Skills</a>
+                <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-black transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-btn" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-b border-gray-100 absolute top-full left-0 w-full py-6 px-6 flex flex-col space-y-4 shadow-xl">
+            <a href="#about" class="text-lg font-medium text-gray-600 hover:text-black">About</a>
+            <a href="#experience" class="text-lg font-medium text-gray-600 hover:text-black">Experience</a>
+            <a href="#skills" class="text-lg font-medium text-gray-600 hover:text-black">Skills</a>
+            <a href="#contact" class="text-lg font-medium text-gray-600 hover:text-black">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center pt-20 px-6">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="max-w-3xl fade-in" style="transition-delay: 0.1s;">
+                    <h1 class="text-5xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+                        VIBE <br />
+                        <span class="text-gray-400">CODER</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-bold mb-4">
+                        Mizanur Rahman — <span class="text-gray-400">Customer Care Specialist with IT & AI Focus</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-500 mb-10 max-w-xl leading-relaxed">
+                        Turning ideas into practical solutions while managing real-world digital operations.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="#experience" class="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all flex items-center gap-2 group">
+                            My Journey
+                            <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#contact" class="border border-gray-200 px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all">
+                            Get in touch
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap gap-6">
+                        <a href="https://facebook.com/Mizan7k" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-600 hover:text-black transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                            Facebook
+                        </a>
+                        <a href="https://wa.me/8801333516909" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-600 hover:text-black transition-colors">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            WhatsApp
+                        </a>
+                        <a href="mailto:private.mizan@gmail.com" class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-600 hover:text-black transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative aspect-square bg-gray-200 rounded-2xl overflow-hidden fade-in">
+                    <img src="https://picsum.photos/seed/mizan/800/800" alt="Mizanur Rahman" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+                </div>
+                <div class="fade-in" style="transition-delay: 0.2s;">
+                    <h2 class="text-sm uppercase tracking-widest text-gray-400 font-bold mb-4">The Mission</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                        I bridge the gap between human needs and technical systems.
+                    </h3>
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>
+                            My journey started in high-stakes customer operations, where I learned that the best technology is the kind that actually works for people. I don't just "use" tools; I optimize them to make digital operations feel seamless.
+                        </p>
+                        <p>
+                            Today, I’m evolving into a <strong>"Vibe Coder"</strong>—leveraging AI and modern logic to build workflows that are as intuitive as they are efficient. I don't just manage tasks; I engineer environments where efficiency and quality are the natural byproducts of well-designed systems, ensuring that every operation is built for scale and resilience.
+                        </p>
+                        <p>
+                            Whether it's managing complex customer inquiries or streamlining administrative tasks, I bring a practical, tech-forward mindset to every challenge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 fade-in">
+                    <h2 class="text-sm uppercase tracking-widest text-gray-400 font-bold mb-4">Journey</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold">Experience</h3>
+                </div>
+                <div class="space-y-12">
+                    <!-- Experience Item -->
+                    <div class="grid md:grid-cols-[250px_1fr] gap-4 md:gap-12 fade-in">
+                        <div>
+                            <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">December 2024 - Present</p>
+                            <h4 class="text-xl font-bold mt-1">FaithIT</h4>
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-4">Customer Support Manager</h5>
+                            <ul class="space-y-2">
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Handle customer inquiries across multiple channels with timely and accurate responses
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Maintain and manage records using CRM systems
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Support onboarding of new customers and guide them through services
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="grid md:grid-cols-[250px_1fr] gap-4 md:gap-12 fade-in">
+                        <div>
+                            <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">March 2022 - March 2024</p>
+                            <h4 class="text-xl font-bold mt-1">Jahez Typing Services</h4>
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-4">Travel Manager</h5>
+                            <ul class="space-y-2">
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Processed visa applications using government portals (ICP, Amer)
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Managed ticketing and travel arrangements efficiently
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Handled documentation and client coordination
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="grid md:grid-cols-[250px_1fr] gap-4 md:gap-12 fade-in">
+                        <div>
+                            <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">November 2021 - March 2022</p>
+                            <h4 class="text-xl font-bold mt-1">SMS Higher Education Group</h4>
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-4">Assistant Counselor</h5>
+                            <ul class="space-y-2">
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Guided students in test preparation (OIETC, Duolingo)
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Provided structured support to improve performance and confidence
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="grid md:grid-cols-[250px_1fr] gap-4 md:gap-12 fade-in">
+                        <div>
+                            <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">July 2019 - October 2021</p>
+                            <h4 class="text-xl font-bold mt-1">IT Lab Solutions Ltd.</h4>
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-4">Administrative Assistant</h5>
+                            <ul class="space-y-2">
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Managed data entry and information updates across systems
+                                </li>
+                                <li class="text-gray-600 flex items-start gap-2 leading-relaxed">
+                                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-2 shrink-0"></div>
+                                    Worked with multiple software tools, adapting to different workflows
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 fade-in">
+                    <h2 class="text-sm uppercase tracking-widest text-gray-400 font-bold mb-4">Expertise</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold">My Skillset</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Skill Category: Technical -->
+                    <div class="p-8 bg-black text-white rounded-3xl shadow-2xl fade-in skill-card">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="cpu" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-6">Technical Capabilities</h4>
+                        <ul class="space-y-6">
+                            <li class="leading-tight">
+                                <span class="block font-bold text-gray-300 text-xs uppercase tracking-widest mb-2">System Logic</span>
+                                <p class="text-gray-400 text-sm">Designing and understanding complex digital processes to ensure smooth operations.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-gray-300 text-xs uppercase tracking-widest mb-2">Data Management</span>
+                                <p class="text-gray-400 text-sm">Structured handling and optimization of information across various CRM and database systems.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-gray-300 text-xs uppercase tracking-widest mb-2">Tool Adaptability</span>
+                                <p class="text-gray-400 text-sm">Rapidly mastering and integrating new software platforms into existing workflows.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-gray-300 text-xs uppercase tracking-widest mb-2">Problem Analysis</span>
+                                <p class="text-gray-400 text-sm">Breaking down technical issues into manageable, actionable solutions.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Skill Category: Core -->
+                    <div class="p-8 border border-gray-200 bg-white rounded-3xl hover:border-black transition-all duration-500 group fade-in skill-card">
+                        <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-black transition-colors">
+                            <i data-lucide="zap" class="w-6 h-6 text-black group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-6">Core Strengths</h4>
+                        <ul class="space-y-6">
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">Operational Agility</span>
+                                <p class="text-gray-500 text-sm">Thriving in fast-paced environments by quickly mastering new tools and shifting priorities.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">Human-Centric Logic</span>
+                                <p class="text-gray-500 text-sm">Approaching technical problems with a deep understanding of the end-user experience.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">Strategic Communication</span>
+                                <p class="text-gray-500 text-sm">Translating complex issues into clear, actionable solutions for both teams and customers.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">AI-Augmented Productivity</span>
+                                <p class="text-gray-500 text-sm">Integrating AI tools into daily workflows to achieve higher efficiency and accuracy.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Skill Category: Languages -->
+                    <div class="p-8 border border-gray-200 bg-gray-100 rounded-3xl fade-in skill-card">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="languages" class="w-6 h-6 text-black"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-6">Languages</h4>
+                        <ul class="space-y-6">
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">Bangla</span>
+                                <p class="text-gray-600 text-sm italic">Native proficiency — Cultural and linguistic depth.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">English</span>
+                                <p class="text-gray-600 text-sm italic">Fluent Professional — Global operations and relations.</p>
+                            </li>
+                            <li class="leading-tight">
+                                <span class="block font-bold text-black text-xs uppercase tracking-widest mb-2">Hindi / Urdu</span>
+                                <p class="text-gray-600 text-sm italic">Conversational — Diverse team and client interaction.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 bg-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="fade-in">
+                    <h2 class="text-sm uppercase tracking-widest text-gray-400 font-bold mb-4">Contact</h2>
+                    <h3 class="text-4xl md:text-6xl font-bold mb-8 tracking-tighter max-w-4xl mx-auto">
+                        Let's build something <span class="text-gray-400">great</span> together.
+                    </h3>
+                    <p class="text-xl text-gray-500 mb-12 leading-relaxed max-w-2xl mx-auto">
+                        I'm always open to new opportunities and collaborations. Reach out via email or connect with me on social media.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center space-y-8 fade-in">
+                    <a href="mailto:private.mizan@gmail.com" class="flex items-center gap-4 text-2xl md:text-4xl font-bold hover:text-gray-500 transition-colors tracking-tighter">
+                        <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gray-50 flex items-center justify-center">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        private.mizan@gmail.com
+                    </a>
+                    <div class="flex gap-6">
+                        <a href="https://facebook.com/Mizan7k" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center hover:bg-black hover:text-white transition-all">
+                            <i data-lucide="facebook" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://www.instagram.com/m1zanur.rahman/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center hover:bg-black hover:text-white transition-all">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://wa.me/8801333516909" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center hover:bg-black hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://github.com/mizan7k" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center hover:bg-black hover:text-white transition-all">
+                            <i data-lucide="github" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-400 text-sm">
+                &copy; <span id="year"></span> Mizanur Rahman. All rights reserved.
+            </p>
+            <div class="flex space-x-8">
+                <a href="https://github.com/mizan7k" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-black transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
